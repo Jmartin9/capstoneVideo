@@ -1,0 +1,105 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require fancybox
+ *= require pages
+ *= require pictures
+ *= require pois
+ *= require comments
+
+ */
+
+body { padding-top: 60px; }
+footer { margin-top: 100px; }
+table, td, th { vertical-align: middle !important; border: none !important; }
+th { border-bottom: 1px solid #DDD !important; }
+.wolfie-box { margin: 10 auto;}
+h1 {text-align: center}
+
+.scroll-wrapper {
+    background:#EFEFEF;
+    box-shadow: 1px 1px 10px #999;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px !important;
+    width: 400px;
+    padding-top: 5px;
+}
+.scrolls {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 500px;
+    height: 80px;
+    white-space:nowrap
+}
+.imageDiv img {
+    box-shadow: 1px 1px 10px #999;
+    margin: 2px;
+    max-height: 50px;
+    cursor: pointer;
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    vertical-align:top;
+}
+
+.admin_box
+{
+    margin-top: 50px;
+    margin-left:  auto;
+    margin-right: auto;
+}
+
+.admin_users
+{
+    width:600px;
+    float:left;
+}
+
+.admin_pois
+{
+    margin-left: 15px;
+    width:485px;
+    float:left;
+}
+
+.admin_users_notifications
+{
+    height: 350px;
+    overflow-y: auto;
+}
+
+.admin_pois_notifications
+{
+    height: 350px;
+    overflow-y: auto;
+}
+
+.admin_users_list
+{
+    height: 350px;
+    overflow-y: auto;
+}
+
+.admin_pois_list
+{
+    height: 350px;
+    overflow-y: auto;
+}
+
+.not_found
+{
+    float: left;
+    width: 500px;
+    margin-left: auto;
+    text-align: center;
+}

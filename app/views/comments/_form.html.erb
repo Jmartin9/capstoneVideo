@@ -1,0 +1,35 @@
+<%= form_for(@comment) do |f| %>
+  <% if @comment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+
+      <ul>
+          <% @comment.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% if can? :create, @comment %>
+      <div class="field">
+        <%= f.label :user_name %><br>
+        <%= f.text_field :user_name %>
+      </div>
+
+      <br>
+
+      <div class="field">
+        <%= f.label :body %><br>
+        <%= f.text_area :body, :size=> "18x4"%>
+        <%= f.hidden_field :poi_id %>
+      </div>
+
+      <br>
+
+      <button class="btn btn-success">
+        <input name="commit" type="submit" value="Post Comment" style="background:none; border-width:0px; color:white;" />
+      </button>
+  <% end %>
+<% end %>
+
