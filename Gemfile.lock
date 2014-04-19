@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/gregbell/active_admin.git
-  revision: 5b7fa25b1e0dcdea1a9494976129f8fc9374c6f2
+  revision: a05b0dccabc2b9d08b1e957ea1443a79033e8ca8
   specs:
     activeadmin (1.0.0.pre)
       arbre (~> 1.0)
@@ -145,6 +145,8 @@ GEM
       omniauth-oauth (~> 1.0)
     orm_adapter (0.5.0)
     pg (0.17.1)
+    pg (0.17.1-x64-mingw32)
+    pg (0.17.1-x86-mingw32)
     polyamorous (1.0.0)
       activerecord (>= 3.0)
     polyglot (0.3.4)
